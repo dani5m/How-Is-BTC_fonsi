@@ -4,7 +4,7 @@ from crypto import *
 import datetime
 import time
 
-tw = Tw(BAERER_TOKEN,API_KEY,API_SECRET,ACCESS_TOKEN,ACCESS_SECRET)
+tw = Tw(API_KEY,API_SECRET,ACCESS_TOKEN,ACCESS_SECRET)
 btc = Crypto("bitcoin")
 
 
