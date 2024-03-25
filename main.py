@@ -4,9 +4,8 @@ from crypto import *
 import datetime
 import time
 
-tw = Tw(API_KEY,API_SECRET,ACCESS_TOKEN,ACCESS_SECRET)
+tw = Tw(BAERER_TOKEN,API_KEY,API_SECRET,ACCESS_TOKEN,ACCESS_SECRET)
 btc = Crypto("bitcoin")
-
 
 while True :
     currentTime = datetime.datetime.now()
@@ -14,6 +13,7 @@ while True :
         btcVal = btc.crypto_obtainValue()
         tw.postTweet("The #Bitcoin is at " + btcVal + " now")
         time.sleep(60)
+
 
 
     
