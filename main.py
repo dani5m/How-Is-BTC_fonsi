@@ -9,7 +9,7 @@ btc = Crypto("bitcoin")
 
 while True :
     currentTime = datetime.datetime.now()
-    if currentTime.minute == 0:
+    if currentTime.minute == 0 | currentTime.minute == 30:
         btcVal = btc.crypto_obtainValue()
         tw.postTweet("The #Bitcoin is at " + btcVal + " now")
         time.sleep(60)
