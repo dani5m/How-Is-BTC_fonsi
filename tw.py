@@ -12,5 +12,13 @@ class Tw :
     def replyTweet(self, message, idTweet) :
         self.client.create_tweet(text=message, in_reply_to_tweet_id=idTweet)
         
+    # Like to a Tweet
+    def likeTweet(self, idTweet) :
+        self.client.create_favorite(idTweet)
+        
+    # Retweet a Tweet
+    def rtTweet(self, idTweet) :
+        self.client.retweet(idTweet)
+        
     
         
