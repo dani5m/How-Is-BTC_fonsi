@@ -12,7 +12,7 @@ while True :
     if currentTime.minute == 0 or currentTime.minute == 30:
         btcVal = btc.crypto_obtainValue()
         tw.postTweet("The #Bitcoin is at " + btcVal + " now")
-        time.sleep(174634560)
+        time.sleep(1740)
 
 
 
